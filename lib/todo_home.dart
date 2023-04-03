@@ -24,7 +24,6 @@ class _ToDoHomeState extends State<ToDoHome> {
   void initState() {
     /// if use is opening  app for the first time
      if(_myBox.get('TODOLIST') == null){
-
        db.createInitialData();
      } else {
        /// data already exist
@@ -76,7 +75,6 @@ class _ToDoHomeState extends State<ToDoHome> {
   }
 
   /// create a new task
-
   void createNewTask() {
     showDialog(
         context: context,

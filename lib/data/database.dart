@@ -13,14 +13,13 @@ class ToDoDataBase{
   /// first time opening this app
   void createInitialData(){
     toDoList =[
-      ['go for run' , false ],
-      ['make dinner' , true ],
+      ['Swipe left to delete' , false ],
+      // ['make dinner' , true ],
     ];
   }
 
-  // load the sata from database
+  // load the data from database
   void loadData(){
-
     toDoList = _myBox.get('TODOLIST');
   }
 
